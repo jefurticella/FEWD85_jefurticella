@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+* {
+  margin: 0; padding: 0;
+}
+
+section, article, header, footer, nav, aside, hgroup {
+  display: block;
+}
+
+
+a:link {
+	color: black;
+}
+
+a:hover {
+	color: gray;
+}
+
+/*
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}*/
+
+
+#wrapper {
+	width: 720px;
+    margin: 0 auto;
+}
+
+#navigation {
+	width: 720px;
+	border-top: 10px solid black;
+	padding: 40px 0 10px 0;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+#firstlink {
+	font-style: italic;
+}
+
+h1 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 40px;
+	padding: 10px 0 50px 0;
+
+	border-bottom: 2px solid black;
+	width: 640px;
+	margin: 0 50px 0 50px;
+	text-transform: uppercase;
+}
+
+#bodycopy h2 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	padding: 40px 0 15px 0; 
+}
+
+#bodycopy {
+	padding: 0 0 30px 40px;
+	width: 400px;
+	float: left;
+	margin: 0 10px 0 10px;
+	
+}
+
+
+#image {
+	float: right;
+	margin: 15px 30px 0 0;
+}
+
+#contact {
+	margin: 0 0 0 50px;
+	width: 420px;
+	text-align: center;
+}
+
+#contact ul {
+	width: 420px;
+
+	list-style: none;
+}
+
+#contact li {
+    padding: 0 10px 0 0;
+
+    display: inline;
+}
+
+#bodycopy p {
+	padding-bottom: 40px; 
+	border-bottom: 2px solid black; 
+}
+
+#bottomrule {
+	width: 720px;
+	border-bottom: 10px solid black;
+	margin: 50px 0 0 0;
+}
+
+#image img {
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+
+
+/* portfolio page */
+
+#portfolio {
+	width: 600px;
+	margin: 0 auto;
+	padding-bottom: 100px; 
+}
+
+
+#portfolio h2 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;	
+	margin: 10px 0 10px 0;
+}
+
+#portfolio h3 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 30px 0 0 0;
+}
+
+#portfolio img {
+	width: 200px;
+	height: 400px;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	border: 2px solid black;
+}
+
+#portfolio li {
+	padding-top: 10px;
+	margin: 0 0 0 40px;
+}
+
+#portcontact {
+	width: 420px;
+	text-align: center;
+}
+
+
+#portcontact ul {
+	width: 720px;
+
+	list-style: none;
+}
+
+#portcontact li {
+    padding: 0 10px 0 0;
+
+
+    display: inline;
+}
+
+
