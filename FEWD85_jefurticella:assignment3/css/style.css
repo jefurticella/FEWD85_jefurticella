@@ -1,0 +1,313 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: #606161;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: auto;
+  background-color: #f0efef;
+}
+
+nav a:link {text-decoration:none;}
+nav a:visited {text-decoration:none; color: none;}
+nav a:hover {text-decoration:none; color: white;}
+nav a:active {text-decoration:none;}
+
+nav a {
+  color: #f9e42e;
+  font-size: 15px;
+}
+
+header {
+
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: white;
+  padding: 15px 0 0 50px;
+  display: inline-block;
+}
+
+header li {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f9e42e;
+}
+
+header ul {
+  font-family: 'Open Sans', sans-serif;
+  float: right;
+  padding: 15px 50px 0 0;
+  color: #f9e42e;
+}
+
+nav {
+  background-color: #033048;
+  height: 70px;
+  }
+
+/* ========================== BLOST POST SECTION ========================= */  
+
+section {
+  width: 700px;
+  height: 100%;
+  float: left;
+}
+
+section h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 50px 0 20px 50px;
+  line-height: 40px;
+  color: #033048;
+}
+
+.firstletter {
+    float: left; 
+    color: #606161; font-size: 75px; 
+    line-height: 60px; 
+    padding: 4px 8px 0 3px;
+    font-family: 'Open Sans', sans-serif; 
+  }
+
+
+section img {
+  width: 93%;
+  float: right;
+  margin: 0 0 20px 0;
+}
+
+section h3 {
+  text-align: right;
+  padding: 30px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #033048;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px 0 0 50px;
+}
+
+section a:link {text-decoration:none;}
+section a:visited {text-decoration:none; color: black;}
+section a:hover {text-decoration:none;}
+section a:active {text-decoration:none;}
+
+section a {
+  text-align: right;
+  padding: 30px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #033048;
+}
+
+section .bottomrule {
+  width: 650px;
+  border-bottom: 2px solid black;
+  margin: 50px 0 0 50px;
+}
+
+section .bottomrule:last-child {
+   margin: 50px 0 100px 50px;
+}
+
+/* ========================== RIGHT RAIL ========================= */
+
+aside {
+  width: 240px;
+  height: 700px;
+  float: right;
+}
+
+aside h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #033048;
+  margin: 25px 0 0 0;
+
+}
+
+aside h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+  color: #033048;
+}
+
+aside a {
+  color: #033048;;
+}
+
+aside ul {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+aside p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 25px;
+
+}
+
+aside a:link {text-decoration:none;}
+aside a:visited {text-decoration:none; color: black;}
+aside a:hover {text-decoration:none;}
+aside a:active {text-decoration:none;}
+
+/* ========================== BOTTOM BUTTON ========================= */
+
+#bottombuttoncontainer {
+  background-color: #f9e42e;
+  background-size: cover;
+  width: 960px;
+  margin: auto;
+  height: 45px;
+  clear: both;
+}
+
+
+#bottombutton {
+  background-color: #033048;
+  border: none;
+  color: white;
+  margin: 10px 420px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  width: 130px;
+  padding: 8px 0 7px 0;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  font-weight: 800;
+
+}
+
+
+/* ========================== FOOTER ========================= */
+
+footer {
+  background-color: #121212;
+  background-size: cover;
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
+footer h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #f9e42e;
+  text-align: center;
+  line-height: 24px;  
+}
+
+footer ul {
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+footer img {
+  height: 18px;
+}
+
+footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  color: white;
+  text-align: center;
+  line-height: 10px;  
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
