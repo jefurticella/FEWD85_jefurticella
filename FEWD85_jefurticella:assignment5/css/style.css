@@ -1,0 +1,184 @@
+/*###CONTAINER - sets the dimensions of the page */
+#container {
+  width: 100%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*REUSABLE LAYOUT CLASSES*/
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*ANIMATIONS - set our animations for a, nav */
+nav, a {
+  transition: all 1s ease-in-out;
+}
+
+/*HEADER - set our background pic and it's position and height */
+body header {
+  height: 810px;
+  background:url(../images/background.jpg) 50% 50% no-repeat fixed;
+  background-size: cover;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-size: 500px;
+  overflow: hidden;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 45px;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  width: 55%;
+  margin: auto;
+  position: relative;
+  bottom: 50px;
+  line-height: 35px;
+}
+
+header p a{
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+}
+
+/*###H1 - set font size and color */
+nav h1 {
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  line-height: 1.8;
+}
+
+nav img {
+  width: 15%;
+  height: 15%;
+}
+/*###UL - float right */
+nav ul {  
+  float: right;
+}
+/*###LI - float left and define our HOVER state */
+li {
+  float: left;
+  list-style: none;
+}
+/*###A - set our padding and font color and bind it back to the active state */
+li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 30px 20px 30px;
+}
+
+li a.active {
+  background-color: rgba(255,255,255, 0.2);
+}
+
+li:hover {
+  background-color: rgba(255,255,255, 0.2);
+  cursor: pointer;
+}
+/*###LARGE CLASS - contain all the properties/values for the default state*/
+header nav.large {
+  padding: 20px 30px;
+  background-color: rgba(0,0,0 0);
+}
+nav.large ul {  
+  background-color: rgba(255,255,255, 0.2);
+}
+nav.large li a {
+  color: white;
+}
+/*###SMALL CLASS - contain all the properties/values for the transitioned state*/
+header nav.small {
+  position: fixed; left: 0; right: 0;
+  padding: 0 100px;
+  background-color: rgba(103, 176, 209, 1);
+}
+nav.small ul {  
+  background-color: rgba(0 0 0 0);
+}
+nav.small li a {
+  color: white;
+}
+ul.social {
+  padding: 0 0 0 425px;
+  position: relative;
+  bottom: 50px;
+}
+ul.social li a {
+  display: inline-block;
+}
+ul.social li a img {
+  height: 50px;
+  width: 50px;
+}
+
+/*###SECTION CLIPS - this is where editing clips go */
+#clips {
+  background-color: red;
+  height: 800px;
+}
+#clips h1 {
+  font-size: 50px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+}
+#clips ul {
+  list-style-type: none;
+}
+#clips  li img {
+  float: left;
+  margin: 5px;
+  border: 5px solid #333;
+  transition: all 0.2s ease-in-out;
+}
+#clips li img:hover {
+border: 5px solid #F15123;
+}
+/*###SECTION SLIDER - this is where street snaps go */
+#slider {
+  background-color: yellow;
+  height: 800px;
+}
+#slider h1 {
+  font-size: 50px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+}
+/*###SECTION ABOUT - this is where my about/resume goes */
+#about {
+  background-color: orange;
+  height: 800px;
+}
+#about h1 {
+  font-size: 50px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+}
+/*###SECTION CLIPS - these are the bottom social links */
+footer {
+  background-color: green;
+  height: 800px;
+}
+footer h1 {
+  font-size: 50px;
+  padding: 100px 0 30px 0;
+  text-align: center;
+}
+
+
+
+
+
+
