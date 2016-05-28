@@ -1,0 +1,29 @@
+#wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul li {
+  border: solid blue;
+  color: red;
+  width: 50px;
+}
+
+.article-nav div {
+  background: transparent
+  url("http://placehold.it/1024x150")
+  no-repeat;
+  display: inline-block;
+  height: 150px;
+  margin: 0 15% 0 3%;
+}

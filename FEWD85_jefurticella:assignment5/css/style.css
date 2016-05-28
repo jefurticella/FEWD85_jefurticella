@@ -1,6 +1,6 @@
 /*###CONTAINER - sets the dimensions of the page */
 #container {
-  width: 100%;
+  height: 100%;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
@@ -10,6 +10,10 @@
   display: block;
   content: "";
   clear: both;
+}
+
+body{
+  font-size: 10px;
 }
 
 /*ANIMATIONS - set our animations for a, nav */
@@ -24,19 +28,26 @@ body header {
   background-size: cover;
 }
 
+
 header h1 {
   color: white;
   text-align: center;
   margin: auto;
-  font-size: 500px;
+  font-size: 50em;
   letter-spacing: .5px;
-  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 25em;
+  }
 }
 
 header p {
   color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 3em;
   margin: 0 auto;
   position: relative;
   padding: 100px 0 30px 0;
@@ -55,6 +66,8 @@ header nav img {
 /*###UL - float right */
 header nav ul {  
   float: right;
+  z-index: 10;
+  position: relative;
 }
 /*###LI - float left and define our HOVER state */
 header nav li {
@@ -66,11 +79,9 @@ header nav li a {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
+  font-size: 1.5em;
 }
 /*### HOW DO I GET THIS TO REFLECT THE ACTUAL ACTIVE LINK? STAYS CONNECTED TO SAME LINK */
-header nav li a.active {
-  background-color: rgba(255,255,255, 0.2);
-}
 
 header nav li:hover {
   background-color: rgba(255,255,255, 0.2);
@@ -118,7 +129,11 @@ header ul.social li:last-child img {
   height: 40px;
 }
 
-
+header ul.social li:hover {
+  opacity: 0.5;
+  transition: .3s ease-in-out;
+  border: 20px;
+}
 
 /*###SECTION CLIPS - this is where editing clips go */
 #clips {
@@ -131,6 +146,7 @@ header ul.social li:last-child img {
   list-style-type: none;
   display: inline-block;
   width: 100%;
+  z-index: 3;
 }
 
 #grid li img {
@@ -141,6 +157,7 @@ header ul.social li:last-child img {
 #grid li img:hover {
 opacity: 0.5;
 transition: .3s ease-in-out;
+z-index: 5;
 }
 
 #clips ul.social {
@@ -240,7 +257,8 @@ display: inline-block;
 #biopic img {
   width: 35%;
   float: right;
-  margin: 220px 150px 0 0;
+  padding: 220px 150px 0 0;
+  overflow: hidden;
 }
 
 /*###FOOTER LINKS - these are the bottom social links */
@@ -249,7 +267,6 @@ display: inline-block;
   width: 100%;
   clear: both;
   height: 100%;
-  width: 100%;
 }
 #bottom img {
   color: white;
@@ -282,7 +299,7 @@ display: inline-block;
 }
 
 #copyright {
-  background-color: red;
+  background-color: #e50000;
   width: 100%
 }
 

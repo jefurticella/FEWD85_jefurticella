@@ -1,0 +1,362 @@
+/*###CONTAINER - sets the dimensions of the page */
+#container {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+/*REUSABLE LAYOUT CLASSES*/
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+/*ANIMATIONS - set our animations for a, nav */
+header nav, a {
+  transition: all 1s ease-in-out;
+}
+
+/*HEADER - set our background pic and it's position and height */
+header {
+  background:url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 50em;
+  z-index: 1;
+}
+
+
+
+header h2 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 0 20px 0;
+  line-height: 35px;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav img {
+  width: 7%
+}
+
+/*###UL - float right */
+header nav ul {  
+  float: right;
+  z-index: 10;
+  position: relative;
+}
+/*###LI - float left and define our HOVER state */
+header nav li {
+  float: left;
+  list-style: none;
+}
+/*###A - set our padding and font color and bind it back to the active state */
+header nav li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.5em;
+}
+/*### HOW DO I GET THIS TO REFLECT THE ACTUAL ACTIVE LINK? STAYS CONNECTED TO SAME LINK */
+
+header nav li:hover {
+  background-color: rgba(255,255,255, 0.2);
+  cursor: pointer;
+}
+/*###LARGE CLASS - contain all the properties/values for the default state*/
+header nav.large {
+  padding: 5px 5px;
+  background-color: rgba(0,0,0 0);
+}
+header nav.large ul {  
+  background-color: rgba(255,255,255, 0.2);
+}
+header nav.large li a {
+  color: white;
+}
+/*###SMALL CLASS - contain all the properties/values for the transitioned state*/
+header nav.small {
+  position: fixed; left: 0; right: 0;
+  padding: 0 100px;
+  background-color: #000099;
+}
+header nav.small ul {  
+  background-color: rgba(0 0 0 0);
+}
+header nav.small li a {
+  color: white;
+}
+
+header ul.social {
+margin: 0 auto;
+list-style: none;
+text-align: center;
+}
+header ul.social li {
+display: inline-block;
+}
+header ul.social li a img {
+  height: 50px;
+  width: 50px;
+}
+
+header ul.social li:last-child img {
+  width: 40px;
+  height: 40px;
+}
+
+header ul.social li:hover {
+  opacity: 0.5;
+  transition: .3s ease-in-out;
+  border: 20px;
+}
+
+/*###SECTION CLIPS - this is where editing clips go */
+#clips {
+  background-color: #0D4F8B;
+  height: 100%;
+  width: 100%;
+}
+
+#grid ul {
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  z-index: 3;
+}
+
+#grid li img {
+  float: left;
+  width: 50%;
+}
+
+#grid li img:hover {
+opacity: 0.5;
+transition: .3s ease-in-out;
+z-index: 5;
+}
+
+#show-this-on-click ul {
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  z-index: 3;
+}
+
+#show-this-on-click li img {
+  float: left;
+  width: 50%;
+}
+
+#show-this-on-click li img:hover {
+opacity: 0.5;
+transition: .3s ease-in-out;
+z-index: 5;
+}
+
+.hide {
+  display: none;
+}
+
+.readmore, .readless {
+  text-align: center;
+  padding: 20px;
+  margin: auto 0;
+}
+.readmore a, .readless a {
+  border-radius: 5px;
+  font-size: 2em;
+  text-decoration: none;
+  background-color: red;
+}
+
+#clips ul.social {
+margin: 0 auto;
+list-style: none;
+text-align: center;
+}
+
+#clips ul.social li {
+display: inline-block;
+}
+
+#clips ul.social li img {
+  width: 40px;
+  height: 40px;
+}
+
+/*.cycle-slideshow*/
+
+.cycle-slideshow img {
+  max-width: 100%;
+}
+
+.cycle-slideshow {
+  width: 100%;
+  max-width: 2000px;
+  display: block;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 0 140px 0;
+}
+
+.cycle-prev, .cycle-next {
+  font-size: 200%;
+  color: #000099;
+  display: block;
+  position: absolute;
+  bottom: 12%;
+  z-index: 9999;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+.cycle-prev {
+  left: 30%;
+}
+
+.cycle-next {
+  right: 30%;
+}
+
+.cycle-pager {
+  width: 100%;
+  position: absolute;
+  bottom: 12.5%;
+  text-align: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.cycle-pager span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #000099;
+  border-radius: 50%;
+  margin: 0 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.cycle-pager .cycle-pager-active {
+  background: #000099;
+}
+
+/*###SECTION ABOUT - this is where my about/resume goes */
+#about {
+  background-color: #6699FF;
+  height: 800px;
+}
+
+#biocopy {
+  width: 40%;
+  margin: 130px 0 0 150px;
+  float: left;
+}
+
+#biocopy p {
+  padding: 20px 0 0 0;
+  line-height: 2;
+  color: white;
+  font-size: 16px;
+}
+
+#biopic img {
+  width: 35%;
+  float: right;
+  padding: 220px 150px 0 0;
+  overflow: hidden;
+}
+
+/*###FOOTER LINKS - these are the bottom social links */
+#bottom {
+  background-color: #003399;
+  width: 100%;
+  clear: both;
+  height: 100%;
+}
+#bottom img {
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  display: block;
+  padding: 20px 0 0 0;
+}
+
+#bottom ul {
+margin: 0 auto;
+list-style: none;
+text-align: center;
+padding: 0 0 20px 0;
+}
+
+#bottom ul li {
+display: inline-block;
+}
+
+#bottom ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+#bottom ul li:last-child img {
+  width: 40px;
+  height: 40px;
+}
+
+#copyright {
+  background-color: #e50000;
+  width: 100%
+}
+
+#copyright p {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  padding: 15px 0;
+}
+
+@media (max-width: 480px) {
+  #grid li img {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 18em;
+  }
+
+  header h2 {
+    font-size: 2em;
+  }
+
+  header nav li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.5em;
+}
+}
