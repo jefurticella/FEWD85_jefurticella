@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Jeffrey Furticella &#124 Picture Editor &#124 219.765.4473 &#124 jeffrey.furticella@nytimes.com</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+  <link rel="stylesheet" href="masterslider/style/masterslider.css">
+  <link rel="stylesheet" href="masterslider/skins/default/style.css">
 </head>
   <body>
     <div id="container">
@@ -18,84 +20,100 @@
           <a href="#container"><img src="images/mustache.png"></a>
             <ul>
               <li><a href="#clips" class="active">Other Peoples' Photos</a></li>
-                <li><a href="#slider">I Saw You On The Street</a></li>
-                  <li><a href="#about">Who Now?</a></li>
-                    <li><a href="#bottom">Say Hey</a></li>
+              <li><a href="#portfolio">I Saw You On The Street</a></li>
+              <li><a href="#about">Who Now?</a></li>
+              <li><a href="#bottom">Say Hey</a></li>
             </ul>
         </nav>
           <h1>sup.</h1>
             <h2>I'm Jeffrey Furticella. A picture editor at <a target="_blank"href="http://www.nytimes.com/pages/sports/index.html">The New York Times.</a></h2>
               <ul class="social">
                 <li><a target="_blank" href="mailto:jefurticella@gmail.com"><img src="images/email2.png"></a></li>
-                  <li><a target="_blank" href="https://www.facebook.com/jeff.furticella"><img src="images/facebook.png"></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/jfurt/"><img src="images/instagram.png"></a></li>
-                      <li><a target="_blank" href="https://twitter.com/jefurticella"><img src="images/twitter.png"></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/jeffrey-furticella-9b113220"><img src="images/linkedin.png"></a></li>
-                          <li><a target="_blank" href="https://app.blink.la/u/jfurt"><img src="images/map.png"></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/jeff.furticella"><img src="images/facebook.png"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/jfurt/"><img src="images/instagram.png"></a></li>
+                <li><a target="_blank" href="https://twitter.com/jefurticella"><img src="images/twitter.png"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/jeffrey-furticella-9b113220"><img src="images/linkedin.png"></a></li>
+                <li><a target="_blank" href="https://app.blink.la/u/jfurt"><img src="images/map.png"></a></li>
               </ul>
       </header>
       <section id="clips">
             <ul id="grid">
               <li><a target="_blank" href="http://nyti.ms/1USPckP"><img src="images/grid_manvsmarathon.jpg" alt="Man Vs Marathon"></a></li>
-                <li><a target="_blank" href="http://nyti.ms/1RE8BpQ"><img src="images/grid_fight.jpg" alt="Fight"></a></li>
-                  <li><a target="_blank" href="http://nyti.ms/1AfYtW0"><img src="images/grid_rodeo.jpg" alt="The Ride of Their Lives"></li></a>
-                    <li><a target="_blank" href="http://nyti.ms/1fMh6xU"></a><img src="images/grid_bronxbasketball.jpg" alt="A Long Hardwood Journey"></li>
-                      <li><a target="_blank" href="http://nyti.ms/1MhqOpI"><img src="images/grid_serena.jpg" alt="Two Weeks in New York"></a></li>
-                        <li><a target="_blank" href="http://nyti.ms/1Q3Doaa"></a><img src="images/grid_tommyjohn.jpg" alt="The Scars of the Game"></li>
+              <li><a target="_blank" href="http://nyti.ms/1RE8BpQ"><img src="images/grid_fight.jpg" alt="Fight"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/1AfYtW0"><img src="images/grid_rodeo.jpg" alt="The Ride of Their Lives"></li></a>
+              <li><a target="_blank" href="http://nyti.ms/1fMh6xU"></a><img src="images/grid_bronxbasketball.jpg" alt="A Long Hardwood Journey"></li>
+              <li><a target="_blank" href="http://nyti.ms/1MhqOpI"><img src="images/grid_serena.jpg" alt="Two Weeks in New York"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/1Q3Doaa"></a><img src="images/grid_tommyjohn.jpg" alt="The Scars of the Game"></li>
+            </ul>
+            <ul class="hide" id="show-this-on-click">
+              <li><a target="_blank" href="http://nyti.ms/1Q3A01J"><img src="images/grid_drbaseball.jpg" alt="The Republic of Baseball"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/1JzPIzx"><img src="images/grid_canadiansoccer.jpg" alt="Thriving in a Barren Land"></a></li>
+              <li><a target="_blank"href="http://nyti.ms/1HhaR1f"><img src="images/grid_lorenzomauldin.jpg" alt="Everyone's Son"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/20grhKM"><img src="images/grid_superbowl.jpg" alt="On the Road to Super Bowl 50"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/1QTH4zV"><img src="images/grid_gayrugby.jpg" alt="Hard-Hitting and Open to All"></a></li>
+              <li><a target="_blank" href="http://nyti.ms/1g83P2C"><img src="images/grid_calciostorico.jpg" alt="A Most Dangerous Game"></a></li>
               </ul>
-              <ul class="hide" id="show-this-on-click">
-                          <li><a target="_blank" href="http://nyti.ms/1Q3A01J"><img src="images/grid_drbaseball.jpg" alt="The Republic of Baseball"></a></li>
-                            <li><a target="_blank" href="http://nyti.ms/1JzPIzx"><img src="images/grid_canadiansoccer.jpg" alt="Thriving in a Barren Land"></a></li>
-                              <li><a target="_blank"href="http://nyti.ms/1HhaR1f"><img src="images/grid_lorenzomauldin.jpg" alt="Everyone's Son"></a></li>
-                                <li><a target="_blank" href="http://nyti.ms/20grhKM"><img src="images/grid_superbowl.jpg" alt="On the Road to Super Bowl 50"></a></li>
-                                   <li><a target="_blank" href="http://nyti.ms/1QTH4zV"><img src="images/grid_gayrugby.jpg" alt="Hard-Hitting and Open to All"></a></li>
-                                    <li><a target="_blank" href="http://nyti.ms/1g83P2C"><img src="images/grid_calciostorico.jpg" alt="A Most Dangerous Game"></a></li>                       
-              </ul>
-            <p class="readmore"><a href="">See more ></a></p>
-            <p class="readless hide"><a href="">See less < </a></p>
-
-            <!--This is a comment. Comments are not displayed in the browser
-          <div class="cycle-slideshow">
-            <span class="cycle-prev">&#9001;</span>
-              <span class="cycle-next">&#9002;</span>
-                <span class="cycle-pager"></span>
-                  <img src="images/print_marathon_1.jpg">
-                    <img src="images/print_marathon_2.jpg">
-                      <img src="images/print_marathon_3.jpg">
-                        <img src="images/print_rodeo_1.jpg">
-                          <img src="images/print_rodeo_2.jpg">
-                            <img src="images/print_rodeo_3.jpg">
-                              <img src="images/print_bronxbasketball_1.jpg">
-                                <img src="images/print_bronxbasketball_2.jpg">
-                                  <img src="images/print_fight_1.jpg">
-                                    <img src="images/print_fight_2.jpg">
-                                      <img src="images/print_fight_3.jpg">
-                                        <img src="images/print_tommyjohn.jpg">        
+           <!-- BUTTON -->
+        <div id="button_container">
+          <p class="readmore"><a href="">Wait, there's more!</a></p>
+          <p class="readless hide"><a href="">Alright, that's enough.</a></p>
+        </div>
+        <div id="print">
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Rodeo.jpg" data-lightbox="gallery"><img src="images/Thumb_Rodeo.jpg"></a>
+          <a href="images/Marathon1.jpg" data-lightbox="gallery"><img src="images/Thumb_Marathon1.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+          <a href="images/Fight.jpg" data-lightbox="gallery"><img src="images/Thumb_Fight.jpg"></a>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="master-slider ms-skin-default" id="masterslider">
+          <div class="ms-slide">
+            <img src="masterslider/blank.gif" data-src="masterslider/images/11ALIPROCESSION-superJumbo.jpg" alt="lorem ipsum dolor sit"/>     
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+              Lorem ipsum dolor sit amet
+              </div>
           </div>
-
-          -->
+          <div class="ms-slide">
+            <img src="masterslider/blank.gif" data-src="masterslider/images/11ALIPROCESSION-superJumbo.jpg" alt="lorem ipsum dolor sit"/>     
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+              Lorem ipsum dolor sit amet
+              </div>
+          </div>
+          <div class="ms-slide">
+            <img src="masterslider/blank.gif" data-src="masterslider/images/11ALIPROCESSION-superJumbo.jpg" alt="lorem ipsum dolor sit"/>     
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+              Lorem ipsum dolor sit amet
+              </div>
+          </div>
+        </div>
       </section>
       <section id="about">
-          <div id="biocopy">
+        <div id="biopic">
+            <img src="images/biopic.jpg">
+        </div>
+        <div id="biocopy">
             <p>You've made it this far. Now your reward is a bio written in third person.</p> 
-            <p>Jeffrey Furticella is a Brooklyn-based sports picture editor for The New York Times. His work has been recognized by the Pictures of the Year International and National Press Photographers Association Best of Photojournalism competitions.</p> 
+            <p>Jeffrey Furticella is a Brooklyn-based sports picture editor for The New York Times. His work has been recognized by the Pictures of the Year International and National Press Photographers Association Best of Photojournalism competitions.</p>
             <p>Previously he supervised the sports picture desk for The Associated Press in the company's New York headquarters, was a picture editor at Sporting News Magazine and initially was a photojournalist for the Times of Northwest Indiana.</p> 
             <p>He also interned at the Patuxent Publishing Company and the Muncie Star Press and attended the Eddie Adams Workshop, Barnstorm XIX.</p> 
             <p>When he is not looking for new ways to combine his love of sports and photography, he is committed to the pursuit of great pizza.</p>
-          </div>
-          <div id="biopic">
-            <img src="images/biopic.jpg">
-          </div>
+            </div>  
       </section> 
-      <footer id="bottom">
+      <footer>
         <img src="images/mustache.png">
           <ul>
             <li><a target="_blank" href="mailto:jefurticella@gmail.com"><img src="images/email2.png"></a></li>
-                  <li><a target="_blank" href="https://www.facebook.com/jeff.furticella"><img src="images/facebook.png"></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/jfurt/"><img src="images/instagram.png"></a></li>
-                      <li><a target="_blank" href="https://twitter.com/jefurticella"><img src="images/twitter.png"></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/jeffrey-furticella-9b113220"><img src="images/linkedin.png"></a></li>
-                          <li><a target="_blank" href="https://app.blink.la/u/jfurt"><img src="images/map.png"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/jeff.furticella"><img src="images/facebook.png"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/jfurt/"><img src="images/instagram.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/jefurticella"><img src="images/twitter.png"></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jeffrey-furticella-9b113220"><img src="images/linkedin.png"></a></li>
+            <li><a target="_blank" href="https://app.blink.la/u/jfurt"><img src="images/map.png"></a></li>
           </ul>
         <div id="copyright">
           <p>Don't steal my shit. &#169;Copyright 2016 Jeffrey Furticella</p>
@@ -103,6 +121,23 @@
       </footer> 
 </body>
 
-<script src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script> 
+<script type="text/javascript" src="js/lightbox.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script src="masterslider/masterslider.min.js"></script>
+<script>
+    var slider = new MasterSlider();
+    slider.control('arrows' ,{insertTo:'#masterslider'}); 
+    slider.control('bullets');  
+
+    slider.setup('masterslider' , {
+      width:1024,
+      height:768,
+      space:5,
+      view:'basic',
+      layout:'fullwidth',
+      speed:20,
+      loop: true,
+        });
+</script>
 </html>

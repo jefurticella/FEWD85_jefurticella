@@ -2,7 +2,6 @@
 #container {
   width: 100%;
   margin: 0 auto;
-  
 }
 
 /*REUSABLE LAYOUT CLASSES*/
@@ -26,7 +25,8 @@ header nav, a {
 header {
   background:url(../images/background.jpg) no-repeat center center fixed;
   background-size: cover;
-  overflow: hidden;
+  width: 100%;
+  height: 820px;
 }
 
 header h1 {
@@ -37,9 +37,8 @@ header h1 {
   margin: auto;
   font-size: 50em;
   z-index: 1;
+  letter-spacing: -30px;
 }
-
-
 
 header h2 {
   color: white;
@@ -47,7 +46,7 @@ header h2 {
   font-size: 3em;
   margin: 0 auto;
   position: relative;
-  padding: 100px 0 20px 0;
+  padding: 70px 0 20px 0;
   line-height: 35px;
 }
 
@@ -78,7 +77,6 @@ header nav li a {
   padding: 10px 20px 10px 20px;
   font-size: 1.5em;
 }
-/*### HOW DO I GET THIS TO REFLECT THE ACTUAL ACTIVE LINK? STAYS CONNECTED TO SAME LINK */
 
 header nav li:hover {
   background-color: rgba(255,255,255, 0.2);
@@ -99,7 +97,8 @@ header nav.large li a {
 header nav.small {
   position: fixed; left: 0; right: 0;
   padding: 0 100px;
-  background-color: #000099;
+  background-color: #04007D;
+  z-index: 20;
 }
 header nav.small ul {  
   background-color: rgba(0 0 0 0);
@@ -134,21 +133,22 @@ header ul.social li:hover {
 
 /*###SECTION CLIPS - this is where editing clips go */
 #clips {
-  background-color: #0D4F8B;
+  background-color: #89C4F4;
   height: 100%;
   width: 100%;
+  padding: 0 0 20px 0;
 }
 
 #grid ul {
   list-style-type: none;
   display: inline-block;
-  width: 100%;
   z-index: 3;
 }
 
 #grid li img {
   float: left;
   width: 50%;
+
 }
 
 #grid li img:hover {
@@ -179,102 +179,59 @@ z-index: 5;
   display: none;
 }
 
+#button_container {
+  background-color: #1F3A93;
+  width: 97.85%;
+  padding: 15px;
+  float: left;
+  margin: 0 0 40px 0;
+}
+
+#button_container a:hover {
+  background-color: rgba(255,255,255, 0.2);
+  cursor: pointer;
+}
+
 .readmore, .readless {
   text-align: center;
-  padding: 20px;
   margin: auto 0;
 }
 .readmore a, .readless a {
-  border-radius: 5px;
   font-size: 2em;
   text-decoration: none;
-  background-color: red;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #04007D;
 }
 
-#clips ul.social {
-margin: 0 auto;
-list-style: none;
-text-align: center;
+#print {
+  width: 70%;
+  margin: 0 auto;
 }
 
-#clips ul.social li {
-display: inline-block;
+#print img {
+ height: 300px;
+ padding: 15px 15px 15px 15px;
+ margin: 0 auto;
+ display: inline-block;
 }
 
-#clips ul.social li img {
-  width: 40px;
-  height: 40px;
-}
-
-/*.cycle-slideshow*/
-
-.cycle-slideshow img {
-  max-width: 100%;
-}
-
-.cycle-slideshow {
-  width: 100%;
-  max-width: 2000px;
-  display: block;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  background-color: #fff;
-  padding: 0 0 140px 0;
-}
-
-.cycle-prev, .cycle-next {
-  font-size: 200%;
-  color: #000099;
-  display: block;
-  position: absolute;
-  bottom: 12%;
-  z-index: 9999;
-  margin-top: -16px;
-  cursor: pointer;
-}
-
-.cycle-prev {
-  left: 30%;
-}
-
-.cycle-next {
-  right: 30%;
-}
-
-.cycle-pager {
-  width: 100%;
-  position: absolute;
-  bottom: 12.5%;
-  text-align: center;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.cycle-pager span {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border: 1px solid #000099;
-  border-radius: 50%;
-  margin: 0 10px;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-.cycle-pager .cycle-pager-active {
-  background: #000099;
+/*###SECTION PORTFOLIO - this is where my personal photos go */
+#portfolio {
+  height: 100%;
+  background-color: #4B77BE;
 }
 
 /*###SECTION ABOUT - this is where my about/resume goes */
 #about {
-  background-color: #6699FF;
-  height: 800px;
+  background-color: #5C97BF;
+  height: 600px;
 }
 
 #biocopy {
   width: 40%;
-  margin: 130px 0 0 150px;
+  margin: 80px 0 0 150px;
   float: left;
 }
 
@@ -282,49 +239,47 @@ display: inline-block;
   padding: 20px 0 0 0;
   line-height: 2;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #biopic img {
   width: 35%;
   float: right;
-  padding: 220px 150px 0 0;
-  overflow: hidden;
+  margin: 110px 150px 0 0;
 }
 
 /*###FOOTER LINKS - these are the bottom social links */
-#bottom {
-  background-color: #003399;
-  width: 100%;
-  clear: both;
-  height: 100%;
+footer {
+  background-color: #f2b632;
+
+
 }
-#bottom img {
+footer img {
   color: white;
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 30%;
   display: block;
   padding: 20px 0 0 0;
 }
 
-#bottom ul {
+footer ul {
 margin: 0 auto;
 list-style: none;
 text-align: center;
 padding: 0 0 20px 0;
 }
 
-#bottom ul li {
+footer ul li {
 display: inline-block;
 }
 
-#bottom ul li img {
+footer ul li img {
   width: 50px;
   height: 50px;
 }
 
-#bottom ul li:last-child img {
+footer ul li:last-child img {
   width: 40px;
   height: 40px;
 }
@@ -344,19 +299,62 @@ display: inline-block;
 @media (max-width: 480px) {
   #grid li img {
     width: 100%;
+    margin: 0 auto;
   }
+
   header h1 {
-    font-size: 18em;
+    font-size: 13em;
+    letter-spacing: -5px;
   }
 
-  header h2 {
-    font-size: 2em;
-  }
-
-  header nav li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px 10px 20px;
-  font-size: 1.5em;
+header nav li {
+  display: none;
 }
+
+
+header h2 {
+    font-size: 1.5em;
+    padding: 20px 0 0 0;
+    width: 75%;
+  }
+  
+header {
+  background:url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 305px;
+}
+
+#print img {
+ display: block;
+}
+
+#about {
+  height: 920px;
+}
+
+#biocopy {
+  width: 100%;
+  float: none;
+  margin: 0 10px 10px 10px;
+}
+
+#biopic img {
+  width: 100%;
+  margin: auto;
+  padding: 40px 0 40px 0;
+}
+
+#biocopy p {
+  padding: 20px 0 0 0;
+  line-height: 2;
+  color: white;
+  font-size: 1.25em;
+  width: 80%;
+  margin: 0 0 0 10%;
+}
+
+#biocopy p:last-child {
+  padding: 0 0 20px 0;
+}
+
 }

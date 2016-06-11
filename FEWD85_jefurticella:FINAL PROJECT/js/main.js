@@ -12,28 +12,33 @@ $(document).on("scroll", function() {
 //Smooth scroll animation//
 
 $('a[href^="#"]').click(function(e) {
- 
+    e.preventDefault();
     $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 1000);
  
     return false;
- 
-    e.preventDefault();
 });
 
+//Show more-Show less button animation//
+
 $(document).ready(function() {
-  $(".readmore").click(function() {
-    $("#show-this-on-click").slideDown();
-      $(".readmore").hide();
-        $(".readless").show();
-          event.preventDefault();
+  $(".readmore").click(function(event) {
+    event.preventDefault();
+    $("#show-this-on-click").fadeIn();
+    $(".readmore").hide();
+    $(".readless").show();
+          
   });
 
-  $(".readless").click(function() {
-    $("#show-this-on-click").slideUp();
-      $(".readless").hide();
-        $(".readmore").show();
-          event.preventDefault();
+  $(".readless").click(function(event) {
+    event.preventDefault();
+    $("#show-this-on-click").fadeOut();
+    $(".readless").hide();
+    $(".readmore").show();
   });
+
+
+
+
 
 });
 
